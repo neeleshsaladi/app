@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Maitre D</title>
+        <link href="17a.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Maitre D</h1>
+
+        <form>
+<b>Total:</b>
+<input type="number" id="Total" name="Total" placeholder="Enter input for Total"><br><br>
+<br>
+<br>
+
+<b>Rate:</b>
+<input type="number" id="Rate" name="Rate" placeholder="Rate"><br><br>
+<label>Tip:</label>
+<br>
+<br>
+<label id="Tax">Tax:5.5%</label>
+<br>
+<br>
+
+<label id="Gtotal">GrandTotal:</label>
+<br>
+<br>
+<input type="button" value="Calculate" onclick="Calculate()">
+<br>
+<br>
+        </form>
+    </body>
+    <script>
+    function Calcuate()
+{
+    let total = document.getElementById('Total').Value;
+    let rate = document.getElementById('Rate').value;
+    //let calculate = document.getElementById('Calculate');
+    let Tax = 0.50;
+    let tip = document.getElementById('Tip').value;
+    let Gtotal=((total+tip) % 5.5);
+    document.getElementById('tip')
+    document.getElementById('Gtotal').innerHTML = "GrandTotal = $" + cal;
+} 
+    </script>
+    <footer>
+
+        <p style="font-size:14px" id="copyright">© Neelesh Saladi</p>
+        </footer>
+</html>
+
