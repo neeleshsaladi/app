@@ -1,9 +1,12 @@
-function Calcuate()
+button.addEventListener("click",Calculate);
+
+function Calculate()
 {
-    var total = document.getElementById('Total').Value;
-    var rate = document.getElementById('Rate').value;
-    var calculate = document.getElementById('Calculate').value;
-    var tip = document.getElementById('Tip').value;
-    var calculae=((Total+Rate) % 5.5);
-    document.getElementById('Calculate').innerHTML = "GrandTotal = $" + cal;
+    let Total = parseFloat(document.getElementById("Total").value);
+    let Rate = parseFloat(document.getElementById("Rate").value);
+    let Tax = 0.055;
+    let Tip = (Rate*Total)/100.0;
+    let Gtotal=((Total+calctip+(Tax*Total)) );
+    document.getElementById("Tip").innerHTML = "Tip: $" +Tip;
+    document.getElementById("Gtotal").innerHTML = "GrandTotal: $" + Gtotal;
 } 

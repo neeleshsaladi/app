@@ -15,37 +15,30 @@
 
 <b>Rate:</b>
 <input type="number" id="Rate" name="Rate" placeholder="Rate"><br><br>
-<label>Tip:</label>
+<label id="Tip">Tip: </label>
 <br>
 <br>
-<label id="Tax">Tax:5.5%</label>
+<label id="Tax">Tax: 5.5%</label>
 <br>
 <br>
 
-<label id="Gtotal">GrandTotal:</label>
+<label id="Gtotal">Grand Total: </label>
 <br>
 <br>
-<input type="button" value="Calculate" onclick="Calculate()">
+<button type="button" id="button"  >
+    Calculate
+    </button>
 <br>
 <br>
         </form>
-    </body>
-    <script>
-    function Calcuate()
-{
-    let total = document.getElementById('Total').Value;
-    let rate = document.getElementById('Rate').value;
-    //let calculate = document.getElementById('Calculate');
-    let Tax = 0.50;
-    let tip = document.getElementById('Tip').value;
-    let Gtotal=((total+tip) % 5.5);
-    document.getElementById('tip')
-    document.getElementById('Gtotal').innerHTML = "GrandTotal = $" + cal;
-} 
+    
+    <script src="scriptt.js">
+   
     </script>
     <footer>
 
         <p style="font-size:14px" id="copyright">© Neelesh Saladi</p>
         </footer>
+    </body>
 </html>
 
